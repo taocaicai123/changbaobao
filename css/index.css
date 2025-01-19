@@ -1,0 +1,263 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #d8bfd8); /* 柔和的渐变背景 */
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #ff6f61, #ff1493); /* 浪漫的渐变背景 */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* 使用 gap 来控制间距 */
+}
+
+.navbar .nav-links li {
+  margin-left: 0; /* 移除左侧间距 */
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffd700; /* 高亮的金色 */
+}
+
+/* 响应式导航栏：为移动端添加汉堡菜单 */
+.navbar .hamburger {
+  display: none; /* 默认隐藏 */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ff6f61;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.story {
+  margin: 30px 0;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+}
+
+.story h2 {
+  font-size: 24px;
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
+
+.image-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.image-slider img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-slider img:hover {
+  transform: scale(1.1);
+}
+
+.love-quotes {
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffd700, #ffb6c1);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.love-quotes h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#quote-of-the-day {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#new-quote-btn {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#new-quote-btn:hover {
+  background-color: #ff1493;
+}
+
+.message-area {
+  margin: 30px 0;
+}
+
+.message-area h2 {
+  font-size: 24px;
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
+
+#message-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+#send-message-btn {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-message-btn:hover {
+  background-color: #ff1493;
+}
+
+#message-list {
+  list-style: none;
+  text-align: left;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#message-list li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* 隐藏导航链接 */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6f61, #ff1493);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar .hamburger {
+    display: block; /* 显示汉堡菜单 */
+  }
+
+  .section {
+    padding: 30px 15px; /* 减少移动端的外边距 */
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .image-slider img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .love-quotes {
+    padding: 15px;
+  }
+
+  .love-quotes h2 {
+    font-size: 20px;
+  }
+
+  #quote-of-the-day {
+    font-size: 18px;
+  }
+
+  #message-input {
+    height: 80px;
+  }
+}

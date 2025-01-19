@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>恋爱聊天板</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">怡宝宝❤️专属</div>
+      <div class="hamburger" onclick="toggleNav()">☰</div> <!-- 汉堡菜单图标 -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="album.html">怡宝宝的专属相册</a></li>
+        <li><a href="xiaojingxi.html">怡宝宝的专属朋友圈</a></li>
+        <li><a href="https://0a0u1rvjq.wasee.com/m/0a0u1rvjq">怡宝宝的专属展馆</a></li>
+        <li><a href="message-board.html">恋爱留言板</a></li>
+        <li><a href="chat.html">恋爱聊天板</a></li>
+        <li><a href="https://fxq.yoomige.com/fxq/index.html#/pagesA/chess/chess?mode=2">恋爱小游戏</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 聊天页面 -->
+  <div class="chat-container">
+    <div class="chat-header">
+      <div id="chat-title">常江怡和白树涛的专属聊天页面</div>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <!-- 聊天记录会动态插入到这里 -->
+    </div>
+    <div class="chat-footer">
+      <textarea id="message-input" rows="2" placeholder="输入聊天内容（支持换行）..."></textarea>
+      <input type="file" id="image-input" accept="image/*" style="display: none;" />
+      <button id="image-button">📷</button>
+      <button id="emoji-button">😊</button>
+      <button id="send-button">发送</button>
+    </div>
+  </div>
+
+  <!-- 表情面板 -->
+  <div id="emoji-picker" class="emoji-picker">
+    <span class="emoji" onclick="insertEmoji('😊')">😊</span>
+    <span class="emoji" onclick="insertEmoji('😂')">😂</span>
+    <span class="emoji" onclick="insertEmoji('❤️')">❤️</span>
+    <span class="emoji" onclick="insertEmoji('👍')">👍</span>
+    <span class="emoji" onclick="insertEmoji('🎉')">🎉</span>
+    <span class="emoji" onclick="insertEmoji('😎')">😎</span>
+    <span class="emoji" onclick="insertEmoji('🐶')">🐶</span>
+    <span class="emoji" onclick="insertEmoji('🍕')">🍕</span>
+  </div>
+
+  <!-- 选择用户名的弹窗 -->
+  <div id="name-modal" class="modal">
+    <div class="modal-content">
+      <h2>请选择您的身份：</h2>
+      <div class="user-select">
+        <div class="user-option" onclick="selectUser('常江怡', 'images/chang.jpg')">
+          <img src="images/chang.jpg" alt="常江怡">
+          <span>常江怡</span>
+        </div>
+        <div class="user-option" onclick="selectUser('白树涛', 'images/bai.jpg')">
+          <img src="images/bai.jpg" alt="白树涛">
+          <span>白树涛</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>恋爱留言板</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/message-board.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">怡宝宝❤️专属</div>
+      <div class="hamburger" onclick="toggleNav()">☰</div> <!-- 汉堡菜单图标 -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="album.html">怡宝宝的专属相册</a></li>
+        <li><a href="xiaojingxi.html">怡宝宝的专属朋友圈</a></li>
+        <li><a href="https://0a0u1rvjq.wasee.com/m/0a0u1rvjq">怡宝宝的专属展馆</a></li>
+        <li><a href="message-board.html">恋爱留言板</a></li>
+        <li><a href="chat.html">恋爱聊天板</a></li>
+        <li><a href="https://fxq.yoomige.com/fxq/index.html#/pagesA/chess/chess?mode=2">恋爱小游戏</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 恋爱留言板内容 -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">恋爱留言板</h1>
+      <p class="subtitle">在这里留下你对我们的祝福吧！</p>
+
+      <!-- 用户选择弹窗 -->
+      <div id="user-modal" class="modal">
+        <div class="modal-content">
+          <h2>请选择你的身份：</h2>
+          <div class="user-select">
+            <div class="user-option" onclick="selectUser('常江怡', 'images/chang.jpg')">
+              <img src="images/chang.jpg" alt="常江怡">
+              <span>常江怡</span>
+            </div>
+            <div class="user-option" onclick="selectUser('白树涛', 'images/bai.jpg')">
+              <img src="images/bai.jpg" alt="白树涛">
+              <span>白树涛</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 留言输入区 -->
+      <div class="message-input-area">
+        <input type="text" id="username-input" placeholder="请输入你的昵称" disabled>
+        <input type="file" id="avatar-input" accept="image/*">
+        <textarea id="message-input" placeholder="在这里写下你的留言..."></textarea>
+        <input type="file" id="media-input" accept="image/*,video/*">
+        <button id="send-message-btn">发送留言</button>
+        <button id="clear-messages-btn">清空所有留言</button>
+      </div>
+
+      <!-- 留言显示区 -->
+      <ul id="message-list" class="message-list"></ul>
+
+      <!-- 分页导航 -->
+      <div class="pagination">
+        <button id="prev-page-btn">上一页</button>
+        <span id="page-number">1</span>
+        <button id="next-page-btn">下一页</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/message-board.js"></script>
+</body>
+</html>

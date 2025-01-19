@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>情侣主题网页 - 首页</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">怡宝宝❤️专属</div>
+    <div class="hamburger" onclick="toggleNav()">☰</div> <!-- 汉堡菜单图标 -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">首页</a></li>
+      <li><a href="album.html">怡宝宝的专属相册</a></li>
+      <li><a href="xiaojingxi.html">怡宝宝的专属朋友圈</a></li>
+      <li><a href="https://0a0u1rvjq.wasee.com/m/0a0u1rvjq">怡宝宝的专属展馆</a></li>
+      <li><a href="message-board.html">恋爱留言板</a></li>
+      <li><a href="chat.html">恋爱聊天板</a></li>
+      <li><a href="https://fxq.yoomige.com/fxq/index.html#/pagesA/chess/chess?mode=2">恋爱小游戏</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- 首页内容 -->
+  <section id="home" class="section">
+    <div class="container">
+      <h1 class="title">欢迎来到我们的甜蜜世界</h1>
+      <p class="subtitle">
+        我们的相遇是命中注定的缘分，我们的爱情是彼此的承诺。<br>
+        纪念日：2024年5月1日<br>
+        在一起的天数：<span id="days-together">0</span>天
+      </p>
+
+      <!-- 情侣背景故事 -->
+      <div class="story">
+        <h2>我们的爱情故事</h2>
+        <h3> 亲爱的常江怡，</h3>
+        <p>
+            在这个宁静的夜晚，我坐在窗前，思绪飘向了你。你的名字如同一首美妙的旋律，轻轻回荡在我的心中。你的笑容，如同晨曦中的第一缕阳光，温暖而明媚，照亮了我前行的道路。</p>
+        <p>
+            每一次与你相遇，都像是命运中最美好的安排。你的每一个眼神，每一句话语，都深深地刻在我的心里，让我感到无比的幸福和安心。你的一颦一笑，都让我沉醉其中，无法自拔。</p>
+        <p> 
+            我想成为你生命中的那颗星星，无论白天或黑夜，无论你身处何方，都能感受到我的光芒和温暖。我想陪伴你走过每一个春夏秋冬，与你一起分享生活中的点点滴滴，无论是喜悦还是忧伤。当你快乐时，我愿与你一起欢笑；当你难过时，我愿成为你的依靠。</p>
+         <p>
+            你是我心中最美的风景，我愿意用一生的时间去守护你，珍惜你。每一天醒来，看到你在我身边，就是我最幸福的时刻。我想与你携手共度每一个明天，一起创造更多美好的回忆。无论未来有多少风雨，我都愿意牵着你的手，陪你一起走过。</p>
+        <p> 
+            愿我们的爱如同这夜空中最亮的星，永远闪耀，永不熄灭。你是我生命中最美的奇迹，我愿用余生的时间，去证明我对你的爱，直到永远。</p>
+        </p>
+      </div>
+
+      <!-- 甜蜜图片轮播 -->
+      <div class="image-slider">
+        <img src="image/s2.jpg" alt="甜蜜照片1">
+        <img src="image/s3.jpg" alt="甜蜜照片2">
+        <img src="image/s4.jpg" alt="甜蜜照片3">
+        <img src="image/s5.jpg" alt="甜蜜照片4">
+        <img src="image/s6.jpg" alt="甜蜜照片4">
+      </div>
+
+      <!-- 情话墙 -->
+      <div class="love-quotes">
+        <h2>情话墙</h2>
+        <p id="quote-of-the-day">今天的情话：...</p>
+        <button id="new-quote-btn">换一句情话</button>
+      </div>
+
+      <!-- 情侣留言区 -->
+      <div class="message-area">
+        <h2>情侣留言</h2>
+        <textarea id="message-input" placeholder="在这里写下你想对TA说的话..."></textarea>
+        <button id="send-message-btn">发送留言</button>
+        <ul id="message-list">
+          <!-- 留言会动态插入到这里 -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

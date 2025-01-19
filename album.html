@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美丽善良温柔动人的宝宝常江怡</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    /* 重置样式 */
+    body, h1 {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #f0e6f3); /* 渐变背景 */
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* 标题样式 */
+    h1 {
+      text-align: center;
+      color: #ff6f61; /* 浪漫的粉红色 */
+      margin-top: 30px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeInDown 1s ease; /* 淡入动画 */
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 图片画廊样式 */
+    #imageGallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      justify-content: center;
+      padding: 30px;
+      box-sizing: border-box;
+      animation: fadeIn 1s ease; /* 淡入动画 */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    #imageGallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    #imageGallery img:hover {
+      transform: scale(1.05); /* 图片放大效果 */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* 悬停时加深阴影 */
+    }
+
+    /* 模态框样式 */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal:hover {
+      cursor: zoom-out; /* 鼠标变成缩小图标 */
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">怡宝宝❤️专属</div>
+      <div class="hamburger" onclick="toggleNav()">☰</div> <!-- 汉堡菜单图标 -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="album.html">怡宝宝的专属相册</a></li>
+        <li><a href="xiaojingxi.html">怡宝宝的专属朋友圈</a></li>
+        <li><a href="https://0a0u1rvjq.wasee.com/m/0a0u1rvjq">怡宝宝的专属展馆</a></li>
+        <li><a href="message-board.html">恋爱留言板</a></li>
+        <li><a href="chat.html">恋爱聊天板</a></li>
+        <li><a href="https://fxq.yoomige.com/fxq/index.html#/pagesA/chess/chess?mode=2">恋爱小游戏</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 标题 -->
+  <h1>美丽善良温柔动人的宝宝常江怡</h1>
+
+  <!-- 图片画廊 -->
+  <div id="imageGallery">
+    <img src="images/s1.jpg" alt="图片 1" onclick="enlargeImage(this)">
+    <img src="images/s2.jpg" alt="图片 2" onclick="enlargeImage(this)">
+    <img src="images/s3.jpg" alt="图片 3" onclick="enlargeImage(this)">
+    <img src="images/s4.jpg" alt="图片 4" onclick="enlargeImage(this)">
+    <img src="images/s5.jpg" alt="图片 5" onclick="enlargeImage(this)">
+    <img src="images/s6.jpg" alt="图片 6" onclick="enlargeImage(this)">
+    <img src="images/s7.jpg" alt="图片 7" onclick="enlargeImage(this)">
+    <img src="images/s8.jpg" alt="图片 8" onclick="enlargeImage(this)">
+    <img src="images/s9.jpg" alt="图片 9" onclick="enlargeImage(this)">
+    <img src="images/s11.jpg" alt="图片 11" onclick="enlargeImage(this)">
+    <img src="images/s12.jpg" alt="图片 12" onclick="enlargeImage(this)">
+    <img src="images/s13.jpg" alt="图片 13" onclick="enlargeImage(this)">
+    <img src="images/s14.jpg" alt="图片 14" onclick="enlargeImage(this)">
+    <img src="images/s15.jpg" alt="图片 15" onclick="enlargeImage(this)">
+    <img src="images/s16.jpg" alt="图片 16" onclick="enlargeImage(this)">
+    <img src="images/s17.jpg" alt="图片 17" onclick="enlargeImage(this)">
+    <img src="images/s18.jpg" alt="图片 18" onclick="enlargeImage(this)">
+    <img src="images/s19.jpg" alt="图片 19" onclick="enlargeImage(this)">
+    <img src="images/s20.jpg" alt="图片 20" onclick="enlargeImage(this)">
+    <img src="images/s21.jpg" alt="图片 21" onclick="enlargeImage(this)">
+    <img src="images/s22.jpg" alt="图片 22" onclick="enlargeImage(this)">
+    <img src="images/s23.jpg" alt="图片 23" onclick="enlargeImage(this)">
+    <img src="images/s24.jpg" alt="图片 24" onclick="enlargeImage(this)">
+    <img src="images/s25.jpg" alt="图片 25" onclick="enlargeImage(this)">
+    <img src="images/s26.jpg" alt="图片 26" onclick="enlargeImage(this)">
+    <img src="images/s27.jpg" alt="图片 27" onclick="enlargeImage(this)">
+    <img src="images/s28.jpg" alt="图片 28" onclick="enlargeImage(this)">
+  </div>
+
+  <script>
+    // 图片放大功能
+    function enlargeImage(img) {
+      const modal = document.createElement('div');
+      modal.className = 'modal';
+
+      const enlargedImg = new Image();
+      enlargedImg.src = img.src;
+      enlargedImg.alt = img.alt;
+      modal.appendChild(enlargedImg);
+
+      document.body.appendChild(modal);
+
+      // 点击模态框关闭
+      modal.addEventListener('click', () => {
+        document.body.removeChild(modal);
+      });
+    }
+    function toggleNav() {
+     const navLinks = document.getElementById('navLinks');
+     navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+  
+</body>
+
+</html>
